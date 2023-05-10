@@ -754,3 +754,39 @@ footer .content li {
     padding: 0;
   }
 }
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.slideshow {
+  padding: 60px 0;
+  background: #f6f6f6;
+}
+
+.slideshow .container {
+  position: relative;
+}
+
+.slideshow .owl-carousel {
+  position: relative;
+}
+
+.slideshow .owl-item {
+  position: relative;
+  min-height: 300px;
+}
+
+.slideshow .owl-item img {
+  display: box;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-text{
+  text-align: center;
+  color:#12B0BB
+}
