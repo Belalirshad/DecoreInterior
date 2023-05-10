@@ -769,6 +769,8 @@ footer .content li {
 
 .slideshow .container {
   position: relative;
+  height: fit-content;
+  width: fit-content;
 }
 
 .slideshow .owl-carousel {
