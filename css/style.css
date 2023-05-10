@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
 
 * {
   padding: 0;
@@ -15,6 +15,10 @@ html {
   max-width: 80%;
   margin: auto;
   position: left;
+}
+
+.happy{
+  margin-top: 100px;
 }
 
 .flex1 {
@@ -39,6 +43,7 @@ html {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
 }
+
 
 /*----global ----*/
 header {
@@ -78,7 +83,7 @@ header ul li {
 }
 
 header ul li a {
-  color: #D0D3D4;
+  color: #d0d3d4;
   font-size: 15px;
   transition: 0.5s;
   text-decoration: none;
@@ -125,7 +130,7 @@ header hr {
 header .home {
   margin-top: 10%;
   text-align: center;
-  color: #D0D3D4;
+  color: #d0d3d4;
 }
 
 header .home h3 {
@@ -151,7 +156,7 @@ header .home .item {
 
 header .home .item a {
   font-size: 20px;
-  color: #12B0BB;
+  color: #12b0bb;
   opacity: 0.8;
 }
 
@@ -172,13 +177,13 @@ header .home .item .text {
   margin-left: 20px;
 }
 
-header .home .item img {
+/* header .home .item img {
   width: 100px;
   height: 100px;
-}
+} */
 
 header .home .item .item_box:hover {
-  background: #ECF0F1;
+  background: #ecf0f1;
   transform: translateY(-10px);
   color: black;
 }
@@ -188,16 +193,18 @@ header .home .item .item_box:hover a {
 }
 
 header .home .item .item_box:hover img {
-  background-color: #12B0BB;
+  background-color: #12b0bb;
 }
 
 @media only screen and (max-width: 800px) {
-
   /*---------------header--------*/
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  header #menu{
+    right: -1000px;
+  }
   .container {
     max-width: 95%;
   }
@@ -225,7 +232,7 @@ header .home .item .item_box:hover img {
   }
 
   header ul li a:hover {
-    color: #12B0BB;
+    color: #12b0bb;
   }
 
   #icon {
@@ -321,13 +328,13 @@ h2 {
 }
 
 .about .img::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 600px;
-  height: 650px;
+  height: 584px;
   border: 10px solid skyblue;
-  left: 13.5%;
-  margin-top: 30px;
+  left: 4.5%;
+  margin-top: -29px;
 }
 
 h5 {
@@ -610,7 +617,6 @@ footer .content li {
 
 /*---------------footer--------*/
 @media only screen and (max-width: 800px) {
-
   /*---------------Design--------*/
   .Design {
     text-align: left;
@@ -633,9 +639,13 @@ footer .content li {
     flex-direction: column;
   }
 
+
+
   .about .img::after {
-    width: 540px;
+    width: 600px;
     height: 600px;
+    left: 5.5%;
+    margin-top: 30px;
   }
 
   h5 {
@@ -785,10 +795,11 @@ footer .content li {
 .slideshow .owl-item img {
   display: box;
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: contain;
 }
 
-.gallery-text{
+.gallery-text {
   text-align: center;
-  color:#12B0BB
+  color: #12b0bb;
 }
