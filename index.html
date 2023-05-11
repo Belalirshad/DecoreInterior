@@ -37,13 +37,13 @@
               <!-- <h1>Decor Interior</h1> -->
             </div>
 
-            <ul id="menu">
-              <li><a href="#HOME">Home</a></li>
-              <li><a href="#ABOUT">Why Us</a></li>
-              <li><a href="#Testimonials">Clients</a></li>
-              <li><a href="#PHOTO">Services</a></li>  
-              <li><a href="#GALLERY">Gallery</a></li>
-              <li><a href="#CONTACT">Contact</a></li>
+            <ul id="menu" class="ham">
+              <li><a  href="#HOME">Home</a></li>
+              <li><a  href="#ABOUT">Why Us</a></li>
+              <li><a  href="#Testimonials">Clients</a></li>
+              <li><a  href="#PHOTO">Services</a></li>  
+              <li><a  href="#GALLERY">Gallery</a></li>
+              <li><a  href="#CONTACT">Contact</a></li>
             </ul>
             <i id="icon" class="fa fa-bars"></i>
           </nav>
@@ -86,8 +86,15 @@
     <script>
       let bar = document.getElementById("icon");
       let menu = document.getElementById("menu");
-
+    
+      menu.addEventListener("click", function() {
+        if(bar.className === "fa fa-times") {
+          menu.style.right = "-1000px";
+          bar.className = "fa fa-bars";
+        }
+      })
       bar.addEventListener("click", function () {
+       
         if (bar.className === "fa fa-bars") {
           bar.className = "fa fa-times";
           menu.style.right = 0;
@@ -425,27 +432,35 @@
       <div class="container" id="CONTACT">
         <div class="content grid">
           <div class="item">
-            <h3>Contact</h3>
-            <div class="item_box flex1">
-              <ul>
-                <li><i class="fa fa-envelope"> info@decoreinterior.in</i></li>
-                <li><i class="fa fa-phone" > +918076907516</i></li>
-                <li><a href="https://www.instagram.com/decor_.interior_"><i class="fa fa-instagram"  style="color: skyblue;"></i></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100092332830078&mibextid=LQQJ4d"><i class="fa fa-facebook" style="color: skyblue;"></i></a></li>
-              </ul>
-              <ul>
-                <ul>
-                  <li>C7, Sector-49</li>
-                  <li>Noida</li>
-                  <li>Uttar Pradesh</li>
-                  <li>India</li>
-                </ul>
+            <div class="flex2">
+              <div>
+                <h3 class="contact">Contact</h3>
+                <div class="item_box flex1">
+                  <ul>
+                    <li><i class="fa fa-envelope"> info@decoreinterior.in</i></li>
+                    <li><i class="fa fa-phone" > +918076907516</i></li>
+                    <li><a href="https://www.instagram.com/decor_.interior_"><i class="fa fa-instagram"  style="color: skyblue;"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100092332830078&mibextid=LQQJ4d"><i class="fa fa-facebook" style="color: skyblue;"></i></a></li>
+                  </ul>
+                  <ul>
+                    <ul>
+                      <li>C7, Sector-49</li>
+                      <li>Noida</li>
+                      <li>Uttar Pradesh</li>
+                      <li>India</li>
+                    </ul>
+                </div>
+              </div>
+              <div>
+                <div class="gmap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.665887734738!2d77.36525984799174!3d28.55725416702755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5cd3149f213%3A0x575e5700eb888fbf!2sDecor%20Interior!5e0!3m2!1sen!2sin!4v1683814841192!5m2!1sen!2sin" class="gmap_2" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
             </div>
+          
           </div>
 
-          <div class="gmap" style="position: relative;left: 600px;top:20px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.665887734738!2d77.36525984799174!3d28.55725416702755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5cd3149f213%3A0x575e5700eb888fbf!2sDecor%20Interior!5e0!3m2!1sen!2sin!4v1683814841192!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+       
 
           <!-- <div class="item">
             <h3>Recent News</h3>
@@ -495,16 +510,20 @@
             </div>
           </div> -->
         </div>
+      
+        <div style="width:40px;height: 40px;position: fixed;right:40px;bottom: 100px;">
+          <a href="https://wa.me/918076907516"><img src="image/whatsapp.png" style="width:60px;height: 60px;" /></a>
+        </div>  
         <p class="legal">
           Copyright (c) 2023 Copyright Holder All Rights Reserved | This
           website is made with <i class="fa fa-heart"></i> by
           <label>A & B</label>
         </p>
       </div>
+   
+
     </footer>
-    <div style="width:40px;height: 40px;position: fixed;right:40px;bottom: 100px;">
-      <a href="https://wa.me/918076907516"><img src="image/whatsapp.png" style="width:60px;height: 60px;" /></a>
-    </div>  
+  
     
         
   </body>

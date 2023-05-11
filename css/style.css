@@ -17,7 +17,7 @@ html {
   position: left;
 }
 
-.happy{
+.happy {
   margin-top: 100px;
 }
 
@@ -44,6 +44,11 @@ html {
   grid-row-gap: 40px;
 }
 
+.gmap_2 {
+  width: 420px;
+  height: 450px;
+  margin-left: 45%;
+}
 
 /*----global ----*/
 header {
@@ -196,6 +201,10 @@ header .home .item .item_box:hover a {
 header .home .item .item_box:hover img {
   background-color: #12b0bb;
 }
+.flex2 {
+  display: flex;
+  align-items: center;
+}
 
 @media only screen and (max-width: 800px) {
   /*---------------header--------*/
@@ -203,7 +212,7 @@ header .home .item .item_box:hover img {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  header #menu{
+  header #menu {
     right: -1000px;
   }
   .container {
@@ -333,7 +342,7 @@ h2 {
   position: absolute;
   width: 620px;
   height: 684px;
-  border: 10px solid skyblue;
+  /* border: 10px solid skyblue; */
   left: 13%;
   margin-top: 20px;
 }
@@ -393,8 +402,9 @@ h5 {
 
 .Testimonials .img img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  /* height: 100%; */
+  /* border-radius: 50%;  */
+  margin-left: 84px;
 }
 
 h3 {
@@ -640,8 +650,6 @@ footer .content li {
     flex-direction: column;
   }
 
-
-
   .about .img::after {
     width: 600px;
     height: 600px;
@@ -677,6 +685,15 @@ footer .content li {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .gmap_2{
+    width:280px;
+    height: 350px;
+    margin-left:-300px;
+    margin-top: 330px;
+  }
+  .contact {
+    margin-top: -320px;
+  }
   /*----global ----*/
   header {
     background-image: url("../image/back.jpg");
@@ -796,7 +813,7 @@ footer .content li {
 .slideshow .owl-item img {
   display: box;
   width: 100%;
-  height: 700px;
+  height: 600px;
   object-fit: contain;
 }
 
