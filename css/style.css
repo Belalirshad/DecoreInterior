@@ -812,7 +812,7 @@ footer .content li {
 
 .slideshow .owl-item img {
   display: box;
-  width: 100%;
+  width: 60%;
   height: 600px;
   object-fit: contain;
 }
