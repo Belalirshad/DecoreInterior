@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /*----global ----*/
 .container {
   max-width: 80%;
@@ -43,7 +44,9 @@ html {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
 }
-
+.mailto:hover{
+  cursor: pointer;
+}
 .gmap_2 {
   width: 420px;
   height: 450px;
